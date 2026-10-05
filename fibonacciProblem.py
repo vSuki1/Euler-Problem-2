@@ -14,11 +14,13 @@ firstNum = 1
 secondNum = 2
 
 sumEven = 0
-while firstNum <= 400000:
+while firstNum <= 4000000:
     if firstNum % 2 == 0:
         sumEven += firstNum
-    secondNum = firstNum + secondNum
+    oldFirst = firstNum
     firstNum = secondNum
+    secondNum = oldFirst + secondNum
+   
 
 print(sumEven)
 
